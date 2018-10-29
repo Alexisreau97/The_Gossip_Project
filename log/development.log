@@ -648,3 +648,550 @@ Processing by WelcomeController#first_name as HTML
 Completed 200 OK in 138ms (Views: 91.7ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-10-29 14:54:34 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/web-console-3.7.0/lib/web_console/middleware.rb:135
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/reaualexis/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/reaualexis/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (4.8ms)
+Completed 200 OK in 135ms (Views: 32.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/team" for 127.0.0.1 at 2018-10-29 14:54:43 +0100
+Processing by TeamController#team as HTML
+  Rendering team/team.html.erb within layouts/application
+  Rendered team/team.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1119ms (Views: 1083.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-10-29 14:54:47 +0100
+Processing by ContactController#contact as HTML
+  Rendering contact/contact.html.erb within layouts/application
+  Rendered contact/contact.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 47ms (Views: 29.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/team" for 127.0.0.1 at 2018-10-29 14:54:48 +0100
+Processing by TeamController#team as HTML
+  Rendering team/team.html.erb within layouts/application
+  Rendered team/team.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 35ms (Views: 30.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-10-29 14:54:48 +0100
+Processing by ContactController#contact as HTML
+  Rendering contact/contact.html.erb within layouts/application
+  Rendered contact/contact.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 47ms (Views: 44.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/team" for 127.0.0.1 at 2018-10-29 14:54:49 +0100
+Processing by TeamController#team as HTML
+  Rendering team/team.html.erb within layouts/application
+  Rendered team/team.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 43ms (Views: 39.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-29 14:54:49 +0100
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/reaualexis/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/reaualexis/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (4.3ms)
+Completed 200 OK in 31ms (Views: 10.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-29 14:54:49 +0100
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/reaualexis/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/reaualexis/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (5.0ms)
+Completed 200 OK in 16ms (Views: 10.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-29 14:59:53 +0100
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/web-console-3.7.0/lib/web_console/middleware.rb:135
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 703ms (Views: 692.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/team" for 127.0.0.1 at 2018-10-29 15:00:03 +0100
+Processing by TeamController#team as HTML
+  Rendering team/team.html.erb within layouts/application
+  Rendered team/team.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 61ms (Views: 46.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-29 15:00:04 +0100
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 44ms (Views: 41.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/team" for 127.0.0.1 at 2018-10-29 15:00:04 +0100
+Processing by TeamController#team as HTML
+  Rendering team/team.html.erb within layouts/application
+  Rendered team/team.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 52ms (Views: 46.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-29 15:00:05 +0100
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 71ms (Views: 67.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-29 15:01:48 +0100
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 108ms (Views: 105.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/team" for 127.0.0.1 at 2018-10-29 15:01:56 +0100
+Processing by TeamController#team as HTML
+  Rendering team/team.html.erb within layouts/application
+  Rendered team/team.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 93ms (Views: 46.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-10-29 15:01:57 +0100
+Processing by ContactController#contact as HTML
+  Rendering contact/contact.html.erb within layouts/application
+  Rendered contact/contact.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 75ms (Views: 58.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-29 15:01:57 +0100
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 54ms (Views: 48.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/team" for 127.0.0.1 at 2018-10-29 15:01:58 +0100
+Processing by TeamController#team as HTML
+  Rendering team/team.html.erb within layouts/application
+  Rendered team/team.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 51ms (Views: 45.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-10-29 15:01:59 +0100
+Processing by ContactController#contact as HTML
+  Rendering contact/contact.html.erb within layouts/application
+  Rendered contact/contact.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 63ms (Views: 57.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-29 15:01:59 +0100
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 37ms (Views: 33.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/team" for 127.0.0.1 at 2018-10-29 15:02:03 +0100
+Processing by TeamController#team as HTML
+  Rendering team/team.html.erb within layouts/application
+  Rendered team/team.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 41ms (Views: 35.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-10-29 15:02:03 +0100
+Processing by ContactController#contact as HTML
+  Rendering contact/contact.html.erb within layouts/application
+  Rendered contact/contact.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 41ms (Views: 36.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/team" for 127.0.0.1 at 2018-10-29 15:02:06 +0100
+Processing by TeamController#team as HTML
+  Rendering team/team.html.erb within layouts/application
+  Rendered team/team.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 42ms (Views: 38.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-10-29 15:02:07 +0100
+Processing by ContactController#contact as HTML
+  Rendering contact/contact.html.erb within layouts/application
+  Rendered contact/contact.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 42ms (Views: 38.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/team" for 127.0.0.1 at 2018-10-29 15:02:07 +0100
+Processing by TeamController#team as HTML
+  Rendering team/team.html.erb within layouts/application
+  Rendered team/team.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 36ms (Views: 33.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/team" for 127.0.0.1 at 2018-10-29 15:02:07 +0100
+Processing by TeamController#team as HTML
+  Rendering team/team.html.erb within layouts/application
+  Rendered team/team.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 43ms (Views: 38.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-10-29 15:02:08 +0100
+Processing by ContactController#contact as HTML
+  Rendering contact/contact.html.erb within layouts/application
+  Rendered contact/contact.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 48ms (Views: 43.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/team" for 127.0.0.1 at 2018-10-29 15:02:08 +0100
+Processing by TeamController#team as HTML
+  Rendering team/team.html.erb within layouts/application
+  Rendered team/team.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 40ms (Views: 35.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-10-29 15:02:09 +0100
+Processing by ContactController#contact as HTML
+  Rendering contact/contact.html.erb within layouts/application
+  Rendered contact/contact.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 41ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/team" for 127.0.0.1 at 2018-10-29 15:02:09 +0100
+Processing by TeamController#team as HTML
+  Rendering team/team.html.erb within layouts/application
+  Rendered team/team.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 38ms (Views: 34.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-10-29 15:02:10 +0100
+Processing by ContactController#contact as HTML
+  Rendering contact/contact.html.erb within layouts/application
+  Rendered contact/contact.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 44ms (Views: 38.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/team" for 127.0.0.1 at 2018-10-29 15:02:10 +0100
+Processing by TeamController#team as HTML
+  Rendering team/team.html.erb within layouts/application
+  Rendered team/team.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 42ms (Views: 37.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-29 15:02:10 +0100
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 49ms (Views: 40.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-29 15:02:24 +0100
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 37ms (Views: 34.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-29 15:03:22 +0100
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 577ms (Views: 562.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/team" for 127.0.0.1 at 2018-10-29 15:03:59 +0100
+Processing by TeamController#team as HTML
+  Rendering team/team.html.erb within layouts/application
+  Rendered team/team.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 95ms (Views: 59.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-10-29 15:04:00 +0100
+Processing by ContactController#contact as HTML
+  Rendering contact/contact.html.erb within layouts/application
+  Rendered contact/contact.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 80ms (Views: 43.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-29 15:04:01 +0100
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 74ms (Views: 49.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-29 15:05:41 +0100
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 62ms (Views: 59.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-29 15:06:14 +0100
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 52ms (Views: 48.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/team" for 127.0.0.1 at 2018-10-29 15:06:22 +0100
+Processing by TeamController#team as HTML
+  Rendering team/team.html.erb within layouts/application
+  Rendered team/team.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 79ms (Views: 32.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-29 15:06:23 +0100
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 50ms (Views: 46.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-10-29 15:06:24 +0100
+Processing by ContactController#contact as HTML
+  Rendering contact/contact.html.erb within layouts/application
+  Rendered contact/contact.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 94ms (Views: 34.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-29 15:06:25 +0100
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 42ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-29 15:06:52 +0100
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 44ms (Views: 41.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-29 15:06:53 +0100
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 40ms (Views: 36.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-10-29 15:06:53 +0100
+Processing by ContactController#contact as HTML
+  Rendering contact/contact.html.erb within layouts/application
+  Rendered contact/contact.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 47ms (Views: 43.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-29 15:06:54 +0100
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 38ms (Views: 34.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-29 15:11:52 +0100
+Processing by IndexController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 2, expected 1)):
+  
+app/controllers/index_controller.rb:3:in `index'
+Started GET "/" for 127.0.0.1 at 2018-10-29 15:12:18 +0100
+Processing by IndexController#index as HTML
+Completed 500 Internal Server Error in 226ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `gossips' for #<IndexController:0x00007f80d5cb7ac0>):
+  
+app/controllers/index_controller.rb:3:in `index'
+Started GET "/" for 127.0.0.1 at 2018-10-29 15:13:50 +0100
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 713ms (Views: 625.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-29 15:14:01 +0100
+Processing by IndexController#index as HTML
+  [1m[36mGossip Load (35.7ms)[0m  [1m[34mSELECT  "gossips".* FROM "gossips" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/web-console-3.7.0/lib/web_console/middleware.rb:135
+Completed 500 Internal Server Error in 108ms (ActiveRecord: 0.0ms)
+
+
+  
+  [1m[36mCACHE Gossip Load (0.0ms)[0m  [1m[34mSELECT  "gossips".* FROM "gossips" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/web-console-3.7.0/lib/web_console/extensions.rb:28
+NoMethodError (undefined method `text' for #<Gossip::ActiveRecord_Relation:0x00007f80d705b810>):
+  
+app/controllers/index_controller.rb:3:in `index'
+Started GET "/" for 127.0.0.1 at 2018-10-29 15:14:14 +0100
+Processing by IndexController#index as HTML
+  [1m[36mGossip Load (26.4ms)[0m  [1m[34mSELECT  "gossips".* FROM "gossips" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/web-console-3.7.0/lib/web_console/middleware.rb:135
+Completed 500 Internal Server Error in 48ms (ActiveRecord: 0.0ms)
+
+
+  
+  [1m[36mCACHE Gossip Load (0.0ms)[0m  [1m[34mSELECT  "gossips".* FROM "gossips" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/web-console-3.7.0/lib/web_console/extensions.rb:28
+NoMethodError (undefined method `author' for #<Gossip::ActiveRecord_Relation:0x00007f80d7601418>):
+  
+app/controllers/index_controller.rb:3:in `index'
+Started GET "/" for 127.0.0.1 at 2018-10-29 15:14:31 +0100
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 545ms (Views: 490.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-29 15:15:28 +0100
+Processing by IndexController#index as HTML
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `author' for #<Class:0x00007f80d7688878>):
+  
+app/controllers/index_controller.rb:3:in `index'
+Started GET "/" for 127.0.0.1 at 2018-10-29 15:16:49 +0100
+Processing by IndexController#index as HTML
+Completed 500 Internal Server Error in 216ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `author' for #<IndexController:0x00007f80d73535b8>):
+  
+app/controllers/index_controller.rb:3:in `index'
+Started GET "/" for 127.0.0.1 at 2018-10-29 15:18:09 +0100
+Processing by IndexController#index as HTML
+Completed 404 Not Found in 17ms (ActiveRecord: 0.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Gossip without an ID):
+  
+app/controllers/index_controller.rb:3:in `index'
+Started GET "/" for 127.0.0.1 at 2018-10-29 15:18:22 +0100
+Processing by IndexController#index as HTML
+  [1m[36mGossip Load (12.8ms)[0m  [1m[34mSELECT  "gossips".* FROM "gossips" WHERE "gossips"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:3
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 457ms (Views: 368.8ms | ActiveRecord: 13.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-29 15:19:29 +0100
+Processing by IndexController#index as HTML
+  [1m[36mGossip Load (36.0ms)[0m  [1m[34mSELECT  "gossips".* FROM "gossips" WHERE "gossips"."id" BETWEEN ? AND ? LIMIT ?[0m  [["id", 1], ["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:3
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 446ms (Views: 335.4ms | ActiveRecord: 36.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-29 15:19:44 +0100
+Processing by IndexController#index as HTML
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `each' for #<Class:0x00007f80d39e85a8>):
+  
+app/controllers/index_controller.rb:3:in `index'
+Started GET "/" for 127.0.0.1 at 2018-10-29 15:19:56 +0100
+Processing by IndexController#index as HTML
+  [1m[36mGossip Load (13.9ms)[0m  [1m[34mSELECT  "gossips".* FROM "gossips" WHERE "gossips"."id" BETWEEN ? AND ? LIMIT ?[0m  [["id", 1], ["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/index_controller.rb:3
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 187ms (Views: 131.5ms | ActiveRecord: 15.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-29 15:24:34 +0100
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  [1m[36mGossip Load (33.6ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/index/index.html.erb:9
+  Rendered index/index.html.erb within layouts/application (58.1ms)
+Completed 200 OK in 587ms (Views: 534.8ms | ActiveRecord: 35.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-29 15:26:28 +0100
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  [1m[36mGossip Load (36.6ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/index/index.html.erb:9
+  Rendered index/index.html.erb within layouts/application (41.7ms)
+Completed 200 OK in 610ms (Views: 570.3ms | ActiveRecord: 36.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-29 15:28:26 +0100
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  [1m[36mGossip Load (59.4ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/index/index.html.erb:10
+  Rendered index/index.html.erb within layouts/application (457.2ms)
+Completed 500 Internal Server Error in 483ms (ActiveRecord: 59.4ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `gossip' for #<#<Class:0x00007f80d7bbbd90>:0x00007f80d5b17da0>
+Did you mean?  @all_gossips):
+    14:   <% end %>
+    15: </table>
+    16: 
+    17: <td><%= gossip.author %></td>
+  
+app/views/index/index.html.erb:17:in `_app_views_index_index_html_erb__654632576678470769_70095658871420'
+Started GET "/" for 127.0.0.1 at 2018-10-29 15:28:40 +0100
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  [1m[36mGossip Load (14.6ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/index/index.html.erb:10
+  Rendered index/index.html.erb within layouts/application (18.6ms)
+Completed 200 OK in 420ms (Views: 400.9ms | ActiveRecord: 14.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-29 15:28:57 +0100
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  [1m[36mGossip Load (15.4ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/index/index.html.erb:10
+  Rendered index/index.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 138ms (Views: 119.9ms | ActiveRecord: 15.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-29 15:30:38 +0100
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  [1m[36mGossip Load (37.3ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/index/index.html.erb:10
+  Rendered index/index.html.erb within layouts/application (39.3ms)
+Started GET "/team" for 127.0.0.1 at 2018-10-29 15:30:39 +0100
+Completed 200 OK in 721ms (Views: 678.7ms | ActiveRecord: 37.3ms)
+
+
+Processing by TeamController#team as HTML
+  Rendering team/team.html.erb within layouts/application
+  Rendered team/team.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 98ms (Views: 39.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-10-29 15:30:40 +0100
+Processing by ContactController#contact as HTML
+  Rendering contact/contact.html.erb within layouts/application
+  Rendered contact/contact.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 72ms (Views: 43.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-29 15:30:41 +0100
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.6ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/index/index.html.erb:10
+  Rendered index/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 61ms (Views: 54.7ms | ActiveRecord: 0.6ms)
+
+

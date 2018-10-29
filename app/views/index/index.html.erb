@@ -1,0 +1,16 @@
+<h1>Bienvenue sur The Gossip Project !</h1>
+<br>
+<h3>Voici la liste des potins :</h3>
+
+<table>
+  <tr>
+    <th>Nom</th>
+    <th>Potin</th>
+  </tr>
+  <% @all_gossips.each do |gossip| %>
+    <tr>
+      <td><%= gossip.author %></td>
+      <td><%= gossip.content %></td>
+    </tr>
+  <% end %>
+</table>
