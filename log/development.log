@@ -1,0 +1,485 @@
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (7.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+Migrating to CreateGossips (20181029102837)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "gossips" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "author" varchar, "content" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20181029102837_create_gossips.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20181029102837"]]
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-10-29 10:30:25.890963"], ["updated_at", "2018-10-29 10:30:25.890963"]]
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mGossip Create (15.7ms)[0m  [1m[32mINSERT INTO "gossips" ("author", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["author", "Irvin Zulauf"], ["content", "The garbage'll do"], ["created_at", "2018-10-29 10:42:15.709643"], ["updated_at", "2018-10-29 10:42:15.709643"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (11.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mGossip Create (0.6ms)[0m  [1m[32mINSERT INTO "gossips" ("author", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["author", "Dr. Alfredia Ledner"], ["content", "We have no choice, General Calrissian! Our cruisers can't repel firepower of that magnitude!"], ["created_at", "2018-10-29 10:42:15.740801"], ["updated_at", "2018-10-29 10:42:15.740801"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mGossip Create (0.4ms)[0m  [1m[32mINSERT INTO "gossips" ("author", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["author", "Hallie Anderson"], ["content", "Just for once, let me look on you with my own eyes."], ["created_at", "2018-10-29 10:42:15.745674"], ["updated_at", "2018-10-29 10:42:15.745674"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mGossip Create (0.5ms)[0m  [1m[32mINSERT INTO "gossips" ("author", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["author", "Jason Lynch"], ["content", "So this is how liberty dies. With thunderous applause."], ["created_at", "2018-10-29 10:42:15.749990"], ["updated_at", "2018-10-29 10:42:15.749990"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mGossip Create (0.4ms)[0m  [1m[32mINSERT INTO "gossips" ("author", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["author", "Rogelio McClure"], ["content", "You're smarter than a tree, aren't you?"], ["created_at", "2018-10-29 10:42:15.753447"], ["updated_at", "2018-10-29 10:42:15.753447"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mGossip Create (0.5ms)[0m  [1m[32mINSERT INTO "gossips" ("author", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["author", "Marcia Kub II"], ["content", "Now, witness the power of this fully operational battle station."], ["created_at", "2018-10-29 10:42:15.758616"], ["updated_at", "2018-10-29 10:42:15.758616"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mGossip Create (0.4ms)[0m  [1m[32mINSERT INTO "gossips" ("author", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["author", "Vikki Tillman"], ["content", "This deal is getting worse all the time."], ["created_at", "2018-10-29 10:42:15.763750"], ["updated_at", "2018-10-29 10:42:15.763750"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mGossip Create (0.4ms)[0m  [1m[32mINSERT INTO "gossips" ("author", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["author", "Roland Steuber"], ["content", "If they follow standard Imperial procedure, they'll dump their garbage before they go to light-speed."], ["created_at", "2018-10-29 10:42:15.767418"], ["updated_at", "2018-10-29 10:42:15.767418"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mGossip Create (0.4ms)[0m  [1m[32mINSERT INTO "gossips" ("author", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["author", "Lynna Williamson"], ["content", "Twice the pride, double the fall."], ["created_at", "2018-10-29 10:42:15.771442"], ["updated_at", "2018-10-29 10:42:15.771442"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mGossip Create (0.4ms)[0m  [1m[32mINSERT INTO "gossips" ("author", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["author", "Alita DuBuque"], ["content", "You can't stop change any more than you can stop the suns from setting."], ["created_at", "2018-10-29 10:42:15.776081"], ["updated_at", "2018-10-29 10:42:15.776081"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+Started GET "/" for 127.0.0.1 at 2018-10-29 13:00:23 +0100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/web-console-3.7.0/lib/web_console/middleware.rb:135
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/reaualexis/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/reaualexis/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (5.6ms)
+Completed 200 OK in 110ms (Views: 35.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/team" for 127.0.0.1 at 2018-10-29 13:00:28 +0100
+Processing by TeamController#team as HTML
+  Rendering team/team.html.erb within layouts/application
+  Rendered team/team.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 2193ms (Views: 2156.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/team" for 127.0.0.1 at 2018-10-29 13:01:40 +0100
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:3:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/team" for 127.0.0.1 at 2018-10-29 13:01:58 +0100
+Processing by TeamController#team as HTML
+  Rendering team/team.html.erb within layouts/application
+  Rendered team/team.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 379ms (Views: 338.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/team" for 127.0.0.1 at 2018-10-29 13:02:20 +0100
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:3:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/team" for 127.0.0.1 at 2018-10-29 13:02:49 +0100
+Processing by TeamController#team as HTML
+  Rendering team/team.html.erb within layouts/application
+  Rendered team/team.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 70ms (Views: 62.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/team" for 127.0.0.1 at 2018-10-29 13:07:02 +0100
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/web-console-3.7.0/lib/web_console/middleware.rb:135
+Processing by TeamController#team as HTML
+  Rendering team/team.html.erb within layouts/application
+  Rendered team/team.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 553ms (Views: 533.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-10-29 13:07:08 +0100
+Processing by ContactController#contact as HTML
+  Rendering contact/contact.html.erb within layouts/application
+  Rendered contact/contact.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 34ms (Views: 30.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-10-29 13:09:23 +0100
+Processing by ContactController#contact as HTML
+  Rendering contact/contact.html.erb within layouts/application
+  Rendered contact/contact.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1925ms (Views: 1922.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/team" for 127.0.0.1 at 2018-10-29 13:09:32 +0100
+Processing by TeamController#team as HTML
+  Rendering team/team.html.erb within layouts/application
+  Rendered team/team.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 141ms (Views: 93.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-10-29 13:09:38 +0100
+Processing by ContactController#contact as HTML
+  Rendering contact/contact.html.erb within layouts/application
+  Rendered contact/contact.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 149ms (Views: 125.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-10-29 13:22:48 +0100
+Processing by ContactController#contact as HTML
+  Rendering contact/contact.html.erb within layouts/application
+  Rendered contact/contact.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 521ms (Views: 484.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-10-29 13:23:22 +0100
+Processing by ContactController#contact as HTML
+  Rendering contact/contact.html.erb within layouts/application
+  Rendered contact/contact.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 615ms (Views: 550.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-10-29 13:23:35 +0100
+Processing by ContactController#contact as HTML
+  Rendering contact/contact.html.erb within layouts/application
+  Rendered contact/contact.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 66ms (Views: 45.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-10-29 13:24:04 +0100
+Processing by ContactController#contact as HTML
+  Rendering contact/contact.html.erb within layouts/application
+  Rendered contact/contact.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 35ms (Views: 31.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/team" for 127.0.0.1 at 2018-10-29 13:24:11 +0100
+Processing by TeamController#team as HTML
+  Rendering team/team.html.erb within layouts/application
+  Rendered team/team.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 91ms (Views: 36.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/team" for 127.0.0.1 at 2018-10-29 13:33:52 +0100
+Processing by TeamController#team as HTML
+  Rendering team/team.html.erb within layouts/application
+  Rendered team/team.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 502ms (Views: 472.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-10-29 13:35:39 +0100
+Processing by ContactController#contact as HTML
+  Rendering contact/contact.html.erb within layouts/application
+  Rendered contact/contact.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 402ms (Views: 370.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-10-29 13:35:54 +0100
+Processing by ContactController#contact as HTML
+  Rendering contact/contact.html.erb within layouts/application
+  Rendered contact/contact.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 125ms (Views: 122.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-10-29 13:39:06 +0100
+Processing by ContactController#contact as HTML
+  Rendering contact/contact.html.erb within layouts/application
+  Rendered contact/contact.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 74ms (Views: 70.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-10-29 13:39:19 +0100
+Processing by ContactController#contact as HTML
+  Rendering contact/contact.html.erb within layouts/application
+  Rendered contact/contact.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 31ms (Views: 27.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-10-29 13:39:41 +0100
+Processing by ContactController#contact as HTML
+  Rendering contact/contact.html.erb within layouts/application
+  Rendered contact/contact.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 82ms (Views: 53.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-29 13:39:43 +0100
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/reaualexis/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/reaualexis/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (4.2ms)
+Completed 200 OK in 53ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-29 13:39:43 +0100
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/reaualexis/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/reaualexis/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (4.9ms)
+Completed 200 OK in 73ms (Views: 57.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/team" for 127.0.0.1 at 2018-10-29 13:39:53 +0100
+Processing by TeamController#team as HTML
+  Rendering team/team.html.erb within layouts/application
+  Rendered team/team.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 70ms (Views: 33.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/team" for 127.0.0.1 at 2018-10-29 13:41:14 +0100
+Processing by TeamController#team as HTML
+  Rendering team/team.html.erb within layouts/application
+  Rendered team/team.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 102ms (Views: 70.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/team" for 127.0.0.1 at 2018-10-29 13:41:54 +0100
+Processing by TeamController#team as HTML
+  Rendering team/team.html.erb within layouts/application
+  Rendered team/team.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 33ms (Views: 29.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/team" for 127.0.0.1 at 2018-10-29 13:42:16 +0100
+Processing by TeamController#team as HTML
+  Rendering team/team.html.erb within layouts/application
+  Rendered team/team.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 33ms (Views: 30.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-10-29 13:42:17 +0100
+Processing by ContactController#contact as HTML
+  Rendering contact/contact.html.erb within layouts/application
+  Rendered contact/contact.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 89ms (Views: 47.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/team" for 127.0.0.1 at 2018-10-29 13:42:18 +0100
+Processing by TeamController#team as HTML
+  Rendering team/team.html.erb within layouts/application
+  Rendered team/team.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 51ms (Views: 46.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-10-29 13:42:19 +0100
+Processing by ContactController#contact as HTML
+  Rendering contact/contact.html.erb within layouts/application
+  Rendered contact/contact.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 77ms (Views: 72.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/team" for 127.0.0.1 at 2018-10-29 13:42:20 +0100
+Processing by TeamController#team as HTML
+  Rendering team/team.html.erb within layouts/application
+  Rendered team/team.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 49ms (Views: 44.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-10-29 13:42:20 +0100
+Processing by ContactController#contact as HTML
+  Rendering contact/contact.html.erb within layouts/application
+  Rendered contact/contact.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 45ms (Views: 41.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/team" for 127.0.0.1 at 2018-10-29 13:42:21 +0100
+Processing by TeamController#team as HTML
+  Rendering team/team.html.erb within layouts/application
+  Rendered team/team.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 45ms (Views: 40.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-10-29 13:42:21 +0100
+Processing by ContactController#contact as HTML
+  Rendering contact/contact.html.erb within layouts/application
+  Rendered contact/contact.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 50ms (Views: 44.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/team" for 127.0.0.1 at 2018-10-29 13:42:21 +0100
+Processing by TeamController#team as HTML
+  Rendering team/team.html.erb within layouts/application
+  Rendered team/team.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 54ms (Views: 47.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-10-29 13:42:22 +0100
+Processing by ContactController#contact as HTML
+  Rendering contact/contact.html.erb within layouts/application
+  Rendered contact/contact.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 51ms (Views: 46.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/team" for 127.0.0.1 at 2018-10-29 13:42:22 +0100
+Processing by TeamController#team as HTML
+  Rendering team/team.html.erb within layouts/application
+  Rendered team/team.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 44ms (Views: 40.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-10-29 13:42:22 +0100
+Processing by ContactController#contact as HTML
+  Rendering contact/contact.html.erb within layouts/application
+  Rendered contact/contact.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 51ms (Views: 46.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/team" for 127.0.0.1 at 2018-10-29 13:42:23 +0100
+Processing by TeamController#team as HTML
+  Rendering team/team.html.erb within layouts/application
+  Rendered team/team.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 43ms (Views: 38.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-10-29 13:42:23 +0100
+Processing by ContactController#contact as HTML
+  Rendering contact/contact.html.erb within layouts/application
+  Rendered contact/contact.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 52ms (Views: 48.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/team" for 127.0.0.1 at 2018-10-29 13:42:24 +0100
+Processing by TeamController#team as HTML
+  Rendering team/team.html.erb within layouts/application
+  Rendered team/team.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 44ms (Views: 38.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-10-29 13:42:24 +0100
+Processing by ContactController#contact as HTML
+  Rendering contact/contact.html.erb within layouts/application
+  Rendered contact/contact.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 46ms (Views: 42.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/team" for 127.0.0.1 at 2018-10-29 13:43:40 +0100
+Processing by TeamController#team as HTML
+  Rendering team/team.html.erb within layouts/application
+  Rendered team/team.html.erb within layouts/application (0.5ms)
+Started GET "/contact" for 127.0.0.1 at 2018-10-29 13:43:40 +0100
+Processing by ContactController#contact as HTML
+Completed 200 OK in 488ms (Views: 455.8ms | ActiveRecord: 0.0ms)
+
+
+  Rendering contact/contact.html.erb within layouts/application
+  Rendered contact/contact.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 74ms (Views: 30.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/team" for 127.0.0.1 at 2018-10-29 13:43:41 +0100
+Processing by TeamController#team as HTML
+  Rendering team/team.html.erb within layouts/application
+  Rendered team/team.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 42ms (Views: 37.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-10-29 13:43:41 +0100
+Processing by ContactController#contact as HTML
+  Rendering contact/contact.html.erb within layouts/application
+  Rendered contact/contact.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 44ms (Views: 39.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/team" for 127.0.0.1 at 2018-10-29 13:43:42 +0100
+Processing by TeamController#team as HTML
+  Rendering team/team.html.erb within layouts/application
+  Rendered team/team.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 50ms (Views: 45.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-10-29 13:43:42 +0100
+Processing by ContactController#contact as HTML
+  Rendering contact/contact.html.erb within layouts/application
+  Rendered contact/contact.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 41ms (Views: 36.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/team" for 127.0.0.1 at 2018-10-29 13:43:42 +0100
+Processing by TeamController#team as HTML
+  Rendering team/team.html.erb within layouts/application
+  Rendered team/team.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 44ms (Views: 39.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-29 13:43:47 +0100
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/reaualexis/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/reaualexis/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (4.9ms)
+Completed 200 OK in 56ms (Views: 10.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-29 13:43:47 +0100
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/reaualexis/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/reaualexis/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (4.5ms)
+Completed 200 OK in 22ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/team" for 127.0.0.1 at 2018-10-29 13:43:54 +0100
+Processing by TeamController#team as HTML
+  Rendering team/team.html.erb within layouts/application
+  Rendered team/team.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 215ms (Views: 191.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-10-29 13:43:56 +0100
+Processing by ContactController#contact as HTML
+  Rendering contact/contact.html.erb within layouts/application
+  Rendered contact/contact.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 80ms (Views: 55.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/team" for 127.0.0.1 at 2018-10-29 13:43:57 +0100
+Processing by TeamController#team as HTML
+  Rendering team/team.html.erb within layouts/application
+  Rendered team/team.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 47ms (Views: 43.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/team" for 127.0.0.1 at 2018-10-29 13:46:38 +0100
+Processing by TeamController#team as HTML
+  Rendering team/team.html.erb within layouts/application
+  Rendered team/team.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 859ms (Views: 804.0ms | ActiveRecord: 0.0ms)
+
+
