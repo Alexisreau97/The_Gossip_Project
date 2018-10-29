@@ -3,5 +3,6 @@ Rails.application.routes.draw do
   get '/', to: 'index#index'
   get '/team', to: 'team#team'
   get '/contact', to: 'contact#contact'
+  get '/potin/:id', to: 'potin#potin'
   get 'welcome/:first_name_id', to: 'welcome#first_name'
 end
