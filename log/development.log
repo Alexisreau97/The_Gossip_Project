@@ -483,3 +483,168 @@ Processing by TeamController#team as HTML
 Completed 200 OK in 859ms (Views: 804.0ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/team" for 127.0.0.1 at 2018-10-29 13:53:13 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/web-console-3.7.0/lib/web_console/middleware.rb:135
+Processing by TeamController#team as HTML
+  Rendering team/team.html.erb within layouts/application
+  Rendered team/team.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 596ms (Views: 510.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/first_name" for 127.0.0.1 at 2018-10-29 14:14:30 +0100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/web-console-3.7.0/lib/web_console/middleware.rb:135
+Processing by WelcomeController#first_name as HTML
+  Parameters: {"first_name"=>"first_name"}
+  Rendering welcome/first_name.html.erb within layouts/application
+  Rendered welcome/first_name.html.erb within layouts/application (375.7ms)
+Completed 500 Internal Server Error in 456ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `first_name' for #<#<Class:0x00007fd3a79b2b98>:0x00007fd3a79e3ba8>):
+    1: <h1>BIENVENUE <%= params first_name %> !</h1>
+    2: <p>Ici c'est notre super site de potins, il est chouette, non ?</p>
+  
+app/views/welcome/first_name.html.erb:1:in `_app_views_welcome_first_name_html_erb___3684409256205606672_70273513397400'
+Started GET "/welcome/first_name" for 127.0.0.1 at 2018-10-29 14:15:09 +0100
+Processing by WelcomeController#first_name as HTML
+  Parameters: {"first_name"=>"first_name"}
+  Rendering welcome/first_name.html.erb within layouts/application
+  Rendered welcome/first_name.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 3122ms (Views: 3115.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/team" for 127.0.0.1 at 2018-10-29 14:16:18 +0100
+Processing by TeamController#team as HTML
+  Rendering team/team.html.erb within layouts/application
+  Rendered team/team.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 465ms (Views: 417.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-10-29 14:16:19 +0100
+Processing by ContactController#contact as HTML
+  Rendering contact/contact.html.erb within layouts/application
+  Rendered contact/contact.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 96ms (Views: 32.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/first_name" for 127.0.0.1 at 2018-10-29 14:23:20 +0100
+Processing by WelcomeController#first_name as HTML
+  Parameters: {"first_name_id"=>"first_name"}
+  Rendering welcome/first_name.html.erb within layouts/application
+  Rendered welcome/first_name.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 549ms (Views: 532.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/alexis" for 127.0.0.1 at 2018-10-29 14:24:02 +0100
+Processing by WelcomeController#first_name as HTML
+  Parameters: {"first_name_id"=>"alexis"}
+  Rendering welcome/first_name.html.erb within layouts/application
+  Rendered welcome/first_name.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 462ms (Views: 438.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/alexis" for 127.0.0.1 at 2018-10-29 14:32:08 +0100
+Processing by WelcomeController#first_name as HTML
+  Parameters: {"first_name_id"=>"alexis"}
+Completed 500 Internal Server Error in 110ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant WelcomeController::User):
+  
+app/controllers/welcome_controller.rb:4:in `first_name'
+Started GET "/welcome/alexis" for 127.0.0.1 at 2018-10-29 14:33:38 +0100
+Processing by WelcomeController#first_name as HTML
+  Parameters: {"first_name_id"=>"alexis"}
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant WelcomeController::User):
+  
+app/controllers/welcome_controller.rb:4:in `first_name'
+Started GET "/welcome/alexis" for 127.0.0.1 at 2018-10-29 14:33:56 +0100
+Processing by WelcomeController#first_name as HTML
+  Parameters: {"first_name_id"=>"alexis"}
+  Rendering welcome/first_name.html.erb within layouts/application
+  Rendered welcome/first_name.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 360ms (Views: 345.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/louis" for 127.0.0.1 at 2018-10-29 14:34:07 +0100
+Processing by WelcomeController#first_name as HTML
+  Parameters: {"first_name_id"=>"louis"}
+  Rendering welcome/first_name.html.erb within layouts/application
+  Rendered welcome/first_name.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 53ms (Views: 49.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/team" for 127.0.0.1 at 2018-10-29 14:35:24 +0100
+Processing by TeamController#team as HTML
+  Rendering team/team.html.erb within layouts/application
+  Rendered team/team.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 93ms (Views: 47.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-10-29 14:35:24 +0100
+Processing by ContactController#contact as HTML
+  Rendering contact/contact.html.erb within layouts/application
+  Rendered contact/contact.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 99ms (Views: 48.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/louis" for 127.0.0.1 at 2018-10-29 14:36:00 +0100
+Processing by WelcomeController#first_name as HTML
+  Parameters: {"first_name_id"=>"louis"}
+  Rendering welcome/first_name.html.erb within layouts/application
+  Rendered welcome/first_name.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 48ms (Views: 43.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/team" for 127.0.0.1 at 2018-10-29 14:39:40 +0100
+Processing by TeamController#team as HTML
+  Rendering team/team.html.erb within layouts/application
+  Rendered team/team.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 692ms (Views: 654.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-10-29 14:39:43 +0100
+Processing by ContactController#contact as HTML
+  Rendering contact/contact.html.erb within layouts/application
+  Rendered contact/contact.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 52ms (Views: 38.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-29 14:39:51 +0100
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/reaualexis/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/reaualexis/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (5.0ms)
+Completed 200 OK in 48ms (Views: 12.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-29 14:39:51 +0100
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/reaualexis/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/reaualexis/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (6.7ms)
+Completed 200 OK in 17ms (Views: 11.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/louis" for 127.0.0.1 at 2018-10-29 14:39:58 +0100
+Processing by WelcomeController#first_name as HTML
+  Parameters: {"first_name_id"=>"louis"}
+  Rendering welcome/first_name.html.erb within layouts/application
+  Rendered welcome/first_name.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 134ms (Views: 109.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/florian" for 127.0.0.1 at 2018-10-29 14:40:58 +0100
+Processing by WelcomeController#first_name as HTML
+  Parameters: {"first_name_id"=>"florian"}
+  Rendering welcome/first_name.html.erb within layouts/application
+  Rendered welcome/first_name.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 138ms (Views: 91.7ms | ActiveRecord: 0.0ms)
+
+
