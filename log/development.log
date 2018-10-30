@@ -2377,3 +2377,287 @@ Processing by IndexController#index as HTML
 Completed 200 OK in 754ms (Views: 713.2ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-10-29 17:39:24 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/web-console-3.7.0/lib/web_console/middleware.rb:135
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  [1m[36mGossip Load (17.1ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/index/index.html.erb:11
+  Rendered index/index.html.erb within layouts/application (42.5ms)
+Completed 200 OK in 995ms (Views: 878.5ms | ActiveRecord: 19.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-29 17:41:06 +0100
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  [1m[36mGossip Load (27.8ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/index/index.html.erb:11
+  Rendered index/index.html.erb within layouts/application (39.0ms)
+Completed 500 Internal Server Error in 606ms (ActiveRecord: 27.8ms)
+
+
+  
+ActionView::Template::Error (The asset "app\assets tylesheets\aplication.scss.css" is not present in the asset pipeline.):
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10: 
+    11:     <%= stylesheet_link_tag "app\assets\stylesheets\aplication.scss" %>
+    12: 
+    13:     <!-- Bootstrap CSS -->
+    14:     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  
+app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb__1958956511448753672_70331986690220'
+Started GET "/" for 127.0.0.1 at 2018-10-29 17:41:29 +0100
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.7ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/index/index.html.erb:11
+  Rendered index/index.html.erb within layouts/application (3.6ms)
+Completed 500 Internal Server Error in 141ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (The asset "app\\assets\\stylesheets\\aplication.scss.css" is not present in the asset pipeline.):
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10: 
+    11:     <%= stylesheet_link_tag 'app\assets\stylesheets\aplication.scss' %>
+    12: 
+    13:     <!-- Bootstrap CSS -->
+    14:     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  
+app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb__1958956511448753672_70331940857220'
+Started GET "/" for 127.0.0.1 at 2018-10-29 17:41:46 +0100
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.5ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/index/index.html.erb:11
+  Rendered index/index.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 191ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (The asset "app\\assets\\stylesheets\\aplication.css" is not present in the asset pipeline.):
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10: 
+    11:     <%= stylesheet_link_tag 'app\assets\stylesheets\aplication.css' %>
+    12: 
+    13:     <!-- Bootstrap CSS -->
+    14:     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  
+app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb__1958956511448753672_70331975513060'
+Started GET "/" for 127.0.0.1 at 2018-10-29 17:42:18 +0100
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.4ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/index/index.html.erb:11
+  Rendered index/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 189ms (Views: 179.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-29 17:42:51 +0100
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.4ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/index/index.html.erb:11
+  Rendered index/index.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 379ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (The asset "app\\assets\\stylesheets\\welcome.scss.css" is not present in the asset pipeline.):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'app\assets\stylesheets\welcome.scss' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10: 
+    11:     <!-- Bootstrap CSS -->
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__1958956511448753672_70331975297660'
+Started GET "/" for 127.0.0.1 at 2018-10-29 17:43:10 +0100
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.4ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/index/index.html.erb:11
+  Rendered index/index.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 58ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (The asset "app\\assets\\stylesheets\\application.scss.css" is not present in the asset pipeline.):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'app\assets\stylesheets\application.scss' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10: 
+    11:     <!-- Bootstrap CSS -->
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__1958956511448753672_70331987167860'
+Started GET "/" for 127.0.0.1 at 2018-10-29 17:43:25 +0100
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.6ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/index/index.html.erb:11
+  Rendered index/index.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (The asset "app\\assets\\stylesheets\\application.css" is not present in the asset pipeline.):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'app\assets\stylesheets\application' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10: 
+    11:     <!-- Bootstrap CSS -->
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__1958956511448753672_70331941299400'
+Started GET "/" for 127.0.0.1 at 2018-10-29 17:43:35 +0100
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.5ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/index/index.html.erb:11
+  Rendered index/index.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (The asset "app\\assets\\stylesheets\\application.css" is not present in the asset pipeline.):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'app\assets\stylesheets\application.css' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10: 
+    11:     <!-- Bootstrap CSS -->
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__1958956511448753672_70331985959660'
+Started GET "/" for 127.0.0.1 at 2018-10-29 17:44:09 +0100
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.6ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/index/index.html.erb:11
+  Rendered index/index.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (The asset "app\\assets\\stylesheets\\application.css" is not present in the asset pipeline.):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'app\assets\stylesheets\application.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10: 
+    11:     <!-- Bootstrap CSS -->
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__1958956511448753672_70331990034060'
+Started GET "/" for 127.0.0.1 at 2018-10-29 17:44:17 +0100
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.5ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/index/index.html.erb:11
+  Rendered index/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 600ms (Views: 596.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-29 17:46:59 +0100
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.9ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/index/index.html.erb:11
+  Rendered index/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 654ms (Views: 649.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-30 09:26:04 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/web-console-3.7.0/lib/web_console/middleware.rb:135
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  [1m[36mGossip Load (13.3ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/index/index.html.erb:11
+  Rendered index/index.html.erb within layouts/application (49.9ms)
+Completed 200 OK in 1180ms (Views: 1051.3ms | ActiveRecord: 14.2ms)
+
+
+Started GET "/team" for 127.0.0.1 at 2018-10-30 09:26:23 +0100
+Processing by TeamController#team as HTML
+  Rendering team/team.html.erb within layouts/application
+  Rendered team/team.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 278ms (Views: 208.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-10-30 09:26:25 +0100
+Processing by ContactController#contact as HTML
+  Rendering contact/contact.html.erb within layouts/application
+  Rendered contact/contact.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 64ms (Views: 35.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-30 09:26:29 +0100
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.3ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/index/index.html.erb:11
+  Rendered index/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 48ms (Views: 35.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/potin/1" for 127.0.0.1 at 2018-10-30 09:26:31 +0100
+Processing by PotinController#potin as HTML
+  Parameters: {"id"=>"1"}
+  Rendering potin/potin.html.erb within layouts/application
+  [1m[36mGossip Load (0.3ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/potin/potin.html.erb:3
+  Rendered potin/potin.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 103ms (Views: 61.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-30 09:26:33 +0100
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.3ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/index/index.html.erb:11
+  Rendered index/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 44ms (Views: 40.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/potin/1" for 127.0.0.1 at 2018-10-30 09:39:38 +0100
+Processing by PotinController#potin as HTML
+  Parameters: {"id"=>"1"}
+  Rendering potin/potin.html.erb within layouts/application
+  [1m[36mGossip Load (13.8ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/potin/potin.html.erb:3
+  Rendered potin/potin.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 679ms (Views: 616.1ms | ActiveRecord: 13.8ms)
+
+
+Started GET "/team" for 127.0.0.1 at 2018-10-30 09:39:40 +0100
+Processing by TeamController#team as HTML
+  Rendering team/team.html.erb within layouts/application
+  Rendered team/team.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 106ms (Views: 47.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-10-30 09:39:40 +0100
+Processing by ContactController#contact as HTML
+  Rendering contact/contact.html.erb within layouts/application
+  Rendered contact/contact.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 103ms (Views: 80.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-30 09:39:41 +0100
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.7ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/index/index.html.erb:11
+  Rendered index/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 127ms (Views: 46.6ms | ActiveRecord: 0.7ms)
+
+

@@ -5,8 +5,14 @@ ruby '2.5.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.1'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# Use sqlite3 as the database for development and test
+group :development, :test do
+  gem 'sqlite3'
+end
+# Use PostGreSQL as the database for production
+group :production do
+  gem 'pg', '>= 0.18'
+end
 # Use faker as the random value creator
 gem 'faker', '~> 1.9', '>= 1.9.1'
 # Use Puma as the app server
