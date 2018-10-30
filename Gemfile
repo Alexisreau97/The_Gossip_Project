@@ -9,7 +9,7 @@ gem 'rails', '~> 5.2.1'
 group :development, :test do
   gem 'sqlite3'
 end
-# Use PostGreSQL as the database for production
+
 group :production do
   gem 'pg', '>= 0.18'
 end
